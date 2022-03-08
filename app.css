@@ -1,0 +1,108 @@
+:root{
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 10% 5% 10% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-size: 15px;
+    background-color: var(--Darkcyan);
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 48vw bottom 48vh, left 45vw top 50vh;
+}
+
+.container{
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 5px 45px 5px rgba(0, 0, 0, 0.349);
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-pattern{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    height: 100%;
+}
+.victor-img{
+    margin-top: 4.5em;
+    position: absolute;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+.main-text{
+    margin-top: 5em;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.452) ;
+}
+.main-text p {
+    padding-top: 5px;
+    color: var(--Darkgrayishblue);
+    padding-bottom: 1.5em;
+    font-size: 14px;
+    padding-top: 5px;
+}
+h1{
+    color: var(--Verydarkdesaturatedblue);
+    font-size: 18px;
+    font-weight: 700;
+}
+h1 span{
+    padding-left: 5px;
+    color: var(--Darkgrayishblue);
+    font-weight: 400;
+}
+
+.stat-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.stat-num{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--Verydarkdesaturatedblue);
+    padding: 1.5em 1.5em 1.5em 1.5em;
+}
+.stat-num p {
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--Darkgrayishblue);
+    padding-top: 2px;
+}
